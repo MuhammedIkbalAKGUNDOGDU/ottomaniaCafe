@@ -9,7 +9,7 @@ const Header = ({ imgSrc, nameOfCafe }) => {
         onClick={() => navigate("/")}
         src={imgSrc}
         alt="Logo"
-        className="h-26 ml-36 w-auto cursor-pointer"
+        className="h-26 p-4 mx-8 w-auto cursor-pointer"
       />
       <div className="ml-4 text-xl font-bold text-white">{nameOfCafe}</div>
     </div>

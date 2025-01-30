@@ -7,7 +7,7 @@ const Categories = ({ imgSrc, nameOfCafe, categories }) => {
   return (
     <div>
       <div className="text-center">
-        <p className="font-bold text-white text-3xl uppercase mt-10">
+        <p className="font-bold text-white text-3xl uppercase my-20">
           {nameOfCafe}
         </p>
       </div>
@@ -26,7 +26,7 @@ const Categories = ({ imgSrc, nameOfCafe, categories }) => {
               style={backgroundStyle}
             >
               <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
-                <div className="text-3xl"> {category.name}</div>
+                <div className="text-3xl "> {category.name}</div>
                 <div
                   onClick={() =>
                     navigate(`/category/${category.name}`, {

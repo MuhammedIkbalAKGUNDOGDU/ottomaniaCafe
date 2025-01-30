@@ -4,6 +4,7 @@ import CafeLogo from "../assets/cafe.png";
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import { Helmet } from "react-helmet-async";
+import Footer from "../components/Footer";
 
 const Cafe = () => {
   const categories = [
@@ -11,6 +12,8 @@ const Cafe = () => {
     { name: "Tatlılar" },
     { name: "Ana Yemekler" },
     { name: "İçecekler" },
+    { name: "Atıştırmalıklar" },
+    { name: "Salatalar" },
     { name: "Atıştırmalıklar" },
     { name: "Salatalar" },
   ];
@@ -27,6 +30,7 @@ const Cafe = () => {
         nameOfCafe={"Ottomania Cafe"}
         categories={categories}
       />
+      <Footer />
     </div>
   );
 };

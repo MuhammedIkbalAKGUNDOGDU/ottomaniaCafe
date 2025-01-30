@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import Footer from "../components/Footer";
 const HomePage = () => {
   const navigate = useNavigate();
 
@@ -18,6 +18,7 @@ const HomePage = () => {
       >
         Ottomania Garden
       </div>
+     
     </div>
   );
 };

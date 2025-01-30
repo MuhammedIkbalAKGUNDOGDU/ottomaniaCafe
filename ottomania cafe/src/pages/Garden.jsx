@@ -4,6 +4,7 @@ import GardenLogo from "../assets/garden.png";
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import { Helmet } from "react-helmet-async";
+import Footer from "../components/Footer";
 
 const Garden = () => {
   const categories = [
@@ -11,6 +12,8 @@ const Garden = () => {
     { name: "Tatlılar" },
     { name: "Ana Yemekler" },
     { name: "İçecekler" },
+    { name: "Atıştırmalıklar" },
+    { name: "Salatalar" },
     { name: "Atıştırmalıklar" },
     { name: "Salatalar" },
   ];
@@ -26,6 +29,7 @@ const Garden = () => {
         nameOfCafe={"Ottomania Garden"}
         categories={categories}
       />
+      <Footer />
     </div>
   );
 };
