@@ -12,7 +12,7 @@ import LandingPage from "./pages/HomePage";
 import Cafe from "./pages/Cafe";
 import Garden from "./pages/Garden";
 import Products from "./pages/Products";
-import Nargileler from "./pages/Nargileler"
+import Nargileler from "./pages/Nargileler";
 import SıcakIcecekler from "./pages/SıcakIcecekler";
 import SogukIcecekler from "./pages/SogukIcecekler";
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -23,6 +23,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/ottomania-cafe" element={<Cafe />}></Route>
         <Route path="/ottomania-garden" element={<Garden />}></Route>
         <Route path="/category/:categoryName" element={<Products />} />
+        <Route path="/ana-yemekler" element={<AnaYemekler />} />
+        <Route path="/tatlilar" element={<Tatlilar />} />
+        <Route path="/alkolsuz-kokteyller" element={<AlkolsuzKokteyller />} />
+        <Route path="/baslangiclar" element={<Baslangüclar />} />
+        <Route path="/nargileler" element={<Nargileler />} />
+        <Route path="/sicak-icecekler" element={<SıcakIcecekler />} />
+        <Route path="/soguk-icecekler" element={<SogukIcecekler />} />
       </Routes>
     </BrowserRouter>
   </HelmetProvider>

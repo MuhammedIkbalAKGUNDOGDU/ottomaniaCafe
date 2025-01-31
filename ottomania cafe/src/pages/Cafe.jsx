@@ -8,14 +8,13 @@ import Footer from "../components/Footer";
 
 const Cafe = () => {
   const categories = [
-    { name: "Kahve" },
-    { name: "Tatlılar" },
     { name: "Ana Yemekler" },
-    { name: "İçecekler" },
-    { name: "Atıştırmalıklar" },
-    { name: "Salatalar" },
-    { name: "Atıştırmalıklar" },
-    { name: "Salatalar" },
+    { name: "Tatlılar" },
+    { name: "Soğuk İçecekler" },
+    { name: "Sıcak İçecekler" },
+    { name: "Başlangıçlar" },
+    { name: "Alkolsüz Kokteyller" },
+    { name: "Nargileler" },
   ];
 
   return (

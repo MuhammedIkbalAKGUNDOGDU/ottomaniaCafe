@@ -4,6 +4,27 @@ import { useNavigate } from "react-router-dom";
 const Categories = ({ imgSrc, nameOfCafe, categories }) => {
   const navigate = useNavigate();
 
+  const handleNavigation = (categoryName) => {
+    if (categoryName === "Başlangıçlar") {
+      navigate("/baslangiclar", { state: { imgSrc, nameOfCafe, categoryName } });
+    } else if (categoryName === "Tatlılar") {
+      navigate("/tatlilar", { state: { imgSrc, nameOfCafe, categoryName } });
+    } else if (categoryName === "Ana Yemekler") {
+      navigate("/ana-yemekler", { state: { imgSrc, nameOfCafe, categoryName } });
+    } else if (categoryName === "Soğuk İçecekler") {
+      navigate("/soguk-icecekler", { state: { imgSrc, nameOfCafe, categoryName } });
+    } else if (categoryName === "Sıcak İçecekler") {
+      navigate("/sicak-icecekler", { state: { imgSrc, nameOfCafe, categoryName } });
+    } else if (categoryName === "Alkolsüz Kokteyller") {
+      navigate("/alkolsuz-kokteyller", {
+        state: { imgSrc, nameOfCafe, categoryName },
+      });
+    } else if (categoryName === "Nargileler") {
+      navigate("/nargileler", { state: { imgSrc, nameOfCafe, categoryName } });
+    } else {
+      navigate("/category/genel", { state: { imgSrc, nameOfCafe, categoryName } });
+    }
+  };
   return (
     <div>
       <div className="text-center">
@@ -28,11 +49,7 @@ const Categories = ({ imgSrc, nameOfCafe, categories }) => {
               <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
                 <div className="text-3xl "> {category.name}</div>
                 <div
-                  onClick={() =>
-                    navigate(`/category/${category.name}`, {
-                      state: { imgSrc, nameOfCafe }, // State ile veri taşıyoruz
-                    })
-                  }
+                  onClick={() => handleNavigation(category.name)}
                   className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer"
                 >
                   DETAYLI BİLGİ
