@@ -4,10 +4,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import { HelmetProvider } from "react-helmet-async"; // HelmetProvider import et
 
+import AnaYemekler from "./pages/AnaYemekler";
+import Tatlilar from "./pages/Tatlilar";
+import AlkolsuzKokteyller from "./pages/AlkolsuzKokteyller";
+import Baslangüclar from "./pages/Baslangüclar";
 import LandingPage from "./pages/HomePage";
 import Cafe from "./pages/Cafe";
 import Garden from "./pages/Garden";
 import Products from "./pages/Products";
+import Nargileler from "./pages/Nargileler"
+import SıcakIcecekler from "./pages/SıcakIcecekler";
+import SogukIcecekler from "./pages/SogukIcecekler";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HelmetProvider>
     <BrowserRouter>
