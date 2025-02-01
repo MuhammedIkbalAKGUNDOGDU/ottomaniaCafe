@@ -22,15 +22,15 @@ const SogukIcecekler = () => {
         {categoryName}
       </div>
       {/* Grid Yapısı: md: 2 kolon, altında 1 kolon */}
-      <div
-        onClick={() =>
-          navigate(`/category/soğuk kahveler`, {
-            state: { imgSrc, nameOfCafe, categoryName },
-          })
-        }
-        className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6 px-4"
-      >
-        <div className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6 px-4">
+        <div
+          onClick={() =>
+            navigate(`/category/soğuk kahveler`, {
+              state: { imgSrc, nameOfCafe, categoryName },
+            })
+          }
+          className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500"
+        >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Soğuk kahveler</div>
             <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
@@ -41,7 +41,23 @@ const SogukIcecekler = () => {
         </div>
         <div
           onClick={() =>
-            navigate(`/category/frapuccino`, {
+            navigate(`/category/soğuk içecekler`, {
+              state: { imgSrc, nameOfCafe, categoryName },
+            })
+          }
+          className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500"
+        >
+          <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
+            <div className="text-3xl "> Soğuk İçecekler</div>
+            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+              DETAYLI BİLGİ
+              <FaArrowCircleRight className="h-3 w-3" />
+            </div>
+          </div>
+        </div>
+        <div
+          onClick={() =>
+            navigate(`/category/frappuccino`, {
               state: { imgSrc, nameOfCafe, categoryName },
             })
           }
@@ -73,14 +89,14 @@ const SogukIcecekler = () => {
         </div>
         <div
           onClick={() =>
-            navigate(`/category/smoothie`, {
+            navigate(`/category/smoothie çeşitleri`, {
               state: { imgSrc, nameOfCafe, categoryName },
             })
           }
           className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500"
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
-            <div className="text-3xl "> smoothie</div>
+            <div className="text-3xl "> Smoothie Çeşitleri</div>
             <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
@@ -89,14 +105,14 @@ const SogukIcecekler = () => {
         </div>
         <div
           onClick={() =>
-            navigate(`/category/milkshake`, {
+            navigate(`/category/milkshake çeşitleri`, {
               state: { imgSrc, nameOfCafe, categoryName },
             })
           }
           className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500"
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
-            <div className="text-3xl "> milkshake</div>
+            <div className="text-3xl "> Milkshake Çeşitleri</div>
             <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
@@ -105,14 +121,14 @@ const SogukIcecekler = () => {
         </div>
         <div
           onClick={() =>
-            navigate(`/category/frozen`, {
+            navigate(`/category/frozen çeşitleri`, {
               state: { imgSrc, nameOfCafe, categoryName },
             })
           }
           className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500"
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
-            <div className="text-3xl "> frozen</div>
+            <div className="text-3xl "> Frozen Çeşitleri</div>
             <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
@@ -121,14 +137,14 @@ const SogukIcecekler = () => {
         </div>
         <div
           onClick={() =>
-            navigate(`/category/bubbletea`, {
+            navigate(`/category/bubbletea çeşitleri`, {
               state: { imgSrc, nameOfCafe, categoryName },
             })
           }
           className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500"
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
-            <div className="text-3xl "> bubbletea</div>
+            <div className="text-3xl "> bubbletea Çeşitleri</div>
             <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />

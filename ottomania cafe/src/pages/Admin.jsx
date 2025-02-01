@@ -38,12 +38,13 @@ const Admin = () => {
       "sıcak kahveler",
       "sıcak içecekler",
       "soğuk kahveler",
+      "soğuk içecekler",
       "frappuccino",
       "limonatalar",
-      "smoothie",
-      "milkshake",
-      "frozen",
-      "bubbletea",
+      "smoothie çeşitleri",
+      "milkshake çeşitleri",
+      "frozen çeşitleri",
+      "bubbletea çeşitleri",
       "tatlılar",
     ],
     garden: [
@@ -64,6 +65,7 @@ const Admin = () => {
       "sıcak kahveler",
       "sıcak içecekler",
       "soğuk kahveler",
+      "soğuk içecekler",
       "frapuccino",
       "limonatalar",
       "smoothie",
@@ -105,6 +107,7 @@ const Admin = () => {
         category: category,
         description: description,
         price: Number(price),
+        timestamp: new Date(), // Yeni eklenen timestamp
       });
 
       alert("Ürün başarıyla eklendi!");
