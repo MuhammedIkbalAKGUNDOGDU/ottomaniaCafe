@@ -13,6 +13,7 @@ const Products = () => {
     nameOfCafe: localStorage.getItem("nameOfCafe") || "Bilinmeyen Kafe",
   };
 
+  console.log(categoryName, imgSrc, nameOfCafe);
   const coffeeList = [
     {
       name: "Espresso",
@@ -77,7 +78,7 @@ const Products = () => {
       </Helmet>
       <Header imgSrc={imgSrc} nameOfCafe={nameOfCafe} />
       <Banner imgSrc={imgSrc} nameOfCafe={nameOfCafe} />
-      <div className="text-white font-bold text-center mt-12 text-4xl font-bold">
+      <div className="text-white font-bold text-center mt-12 text-4xl font-bold capitalize">
         {categoryName}
       </div>
       <ProductsList list={coffeeList} nameOfCafe={nameOfCafe} />

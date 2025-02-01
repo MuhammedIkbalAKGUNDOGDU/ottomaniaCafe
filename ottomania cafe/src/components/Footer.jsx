@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mx-8 text-white p-4  text-sm border-t-1">
+    <div className="mx-8 mt-8 text-white p-4  text-sm border-t-1">
       <div className="flex"></div>{" "}
       {/*Facebook instagram X vs. sosyal medya linkleri */}
       <div className="text-center">
