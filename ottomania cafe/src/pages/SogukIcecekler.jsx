@@ -48,7 +48,7 @@ const SogukIcecekler = () => {
           className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30 bg-gray-500"
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
-            <div className="text-3xl "> Frapuccino</div>
+            <div className="text-3xl "> Frappuccino</div>
             <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />

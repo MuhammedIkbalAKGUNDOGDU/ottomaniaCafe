@@ -38,7 +38,7 @@ const Admin = () => {
       "sıcak kahveler",
       "sıcak içecekler",
       "soğuk kahveler",
-      "frapuccino",
+      "frappuccino",
       "limonatalar",
       "smoothie",
       "milkshake",
