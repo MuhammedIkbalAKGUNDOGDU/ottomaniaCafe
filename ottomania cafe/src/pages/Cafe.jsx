@@ -6,6 +6,7 @@ import Categories from "../components/Categories";
 import { Helmet } from "react-helmet-async";
 import Footer from "../components/Footer";
 
+
 const Cafe = () => {
   const categories = [
     { name: "Ana Yemekler" },
@@ -17,6 +18,7 @@ const Cafe = () => {
     { name: "Nargileler" },
   ];
 
+  
   return (
     <div className="bg-[#111] min-h-screen">
       <Helmet>

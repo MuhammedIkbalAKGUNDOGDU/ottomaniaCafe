@@ -20,8 +20,58 @@ const Admin = () => {
 
   // Kategori seçenekleri
   const categories = {
-    cafe: ["kahve", "çay", "tatlı", "sandviç"],
-    garden: ["çiçek", "bitki", "bahçe aksesuarı"],
+    cafe: [
+      "tavuk yemekleri",
+      "burgerlar",
+      "makarnalar",
+      "ızgaralar",
+      "salatalar",
+      "alkolsüz kokteyller",
+      "atıştırmalıklar",
+      "tostlar",
+      "ottoN serisi",
+      "natural otto klasik",
+      "dark serisi",
+      "otto special",
+      "otto ice tea",
+      "premium",
+      "sıcak kahveler",
+      "sıcak içecekler",
+      "soğuk kahveler",
+      "frapuccino",
+      "limonatalar",
+      "smoothie",
+      "milkshake",
+      "frozen",
+      "bubbletea",
+      "tatlılar",
+    ],
+    garden: [
+      "tavuk yemekleri",
+      "burgerlar",
+      "makarnalar",
+      "ızgaralar",
+      "salatalar",
+      "alkolsüz kokteyller",
+      "atıştırmalıklar",
+      "tostlar",
+      "ottoN serisi",
+      "natural otto klasik",
+      "dark serisi",
+      "otto special",
+      "otto ice tea",
+      "premium",
+      "sıcak kahveler",
+      "sıcak içecekler",
+      "soğuk kahveler",
+      "frapuccino",
+      "limonatalar",
+      "smoothie",
+      "milkshake",
+      "frozen",
+      "bubbletea",
+      "tatlılar",
+    ],
   };
 
   // Ürünleri Firestore'dan çekme fonksiyonu
@@ -43,12 +93,13 @@ const Admin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!productName || !category || !description || !price) {
+    if (!productName || !category || !price) {
       alert("Lütfen tüm alanları doldurun!");
       return;
     }
 
     try {
+      console.log(category);
       await addDoc(collection(db, selectedCollection), {
         name: productName,
         category: category,
@@ -58,7 +109,6 @@ const Admin = () => {
 
       alert("Ürün başarıyla eklendi!");
       setProductName("");
-      setCategory(categories[selectedCollection][0]); // Seçilen koleksiyona göre varsayılan kategori ayarla
       setDescription("");
       setPrice("");
       fetchProducts(); // Ürünleri yeniden yükle
@@ -184,7 +234,10 @@ const Admin = () => {
           <h2>Ürünleri Sil</h2>
           <div className="h-80 overflow-y-auto border p-2">
             {products.map((product) => (
-              <div key={product.id} className="flex justify-between items-center border-b p-2">
+              <div
+                key={product.id}
+                className="flex justify-between items-center border-b p-2"
+              >
                 <span className="font-bold">{product.name}</span>
                 <button
                   className="bg-red-500 text-white rounded-lg p-2 px-6 cursor-pointer"
@@ -203,7 +256,10 @@ const Admin = () => {
         <h2>Ürünleri Güncelle</h2>
         <div className="h-80 overflow-y-auto border p-2">
           {products.map((product) => (
-            <div key={product.id} className="flex justify-between items-center border-b p-2">
+            <div
+              key={product.id}
+              className="flex justify-between items-center border-b p-2"
+            >
               <span className="font-bold w-32">{product.name}</span>
               <input
                 type="number"
@@ -219,7 +275,13 @@ const Admin = () => {
               />
               <button
                 className="bg-green-500 text-white rounded-lg p-2 cursor-pointer"
-                onClick={() => updateProduct(product.id, product.newPrice || product.price, product.newDescription || product.description)}
+                onClick={() =>
+                  updateProduct(
+                    product.id,
+                    product.newPrice || product.price,
+                    product.newDescription || product.description
+                  )
+                }
               >
                 Onayla
               </button>

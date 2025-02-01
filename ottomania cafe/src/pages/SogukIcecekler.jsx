@@ -24,7 +24,7 @@ const SogukIcecekler = () => {
       {/* Grid Yapısı: md: 2 kolon, altında 1 kolon */}
       <div
         onClick={() =>
-          navigate(`/category/soğuk kahveleri`, {
+          navigate(`/category/soğuk kahveler`, {
             state: { imgSrc, nameOfCafe, categoryName },
           })
         }
@@ -57,7 +57,7 @@ const SogukIcecekler = () => {
         </div>
         <div
           onClick={() =>
-            navigate(`/category/frapuccino`, {
+            navigate(`/category/limonatalar`, {
               state: { imgSrc, nameOfCafe, categoryName },
             })
           }
