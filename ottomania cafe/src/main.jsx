@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/ottomania-garden" element={<Garden />}></Route>
         <Route path="/category/:categoryName" element={<Products />} />
         <Route path="/ana-yemekler" element={<AnaYemekler />} />
-        <Route path="/tatlilar" element={<Tatlilar />} />
+        <Route path="/tatlılar" element={<Tatlilar />} />
         <Route path="/alkolsuz-kokteyller" element={<AlkolsuzKokteyller />} />
         <Route path="/baslangiclar" element={<Baslangüclar />} />
         <Route path="/nargileler" element={<Nargileler />} />

@@ -8,7 +8,7 @@ const AlkolsuzKokteyller = () => {
   const { imgSrc, nameOfCafe, categoryName } = location.state || {
     imgSrc: localStorage.getItem("imgSrc") || "",
     nameOfCafe: localStorage.getItem("nameOfCafe") || "Bilinmeyen Kafe",
-    categoryName: localStorage.getItem("categoryName") || "",
+    categoryName: localStorage.getItem("categoryName").toLowerCase() || "",
   };
 
   useEffect(() => {

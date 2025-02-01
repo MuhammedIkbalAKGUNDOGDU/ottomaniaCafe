@@ -8,7 +8,7 @@ const Categories = ({ imgSrc, nameOfCafe, categories }) => {
     if (categoryName === "Başlangıçlar") {
       navigate("/baslangiclar", { state: { imgSrc, nameOfCafe, categoryName } });
     } else if (categoryName === "Tatlılar") {
-      navigate("/tatlilar", { state: { imgSrc, nameOfCafe, categoryName } });
+      navigate("/tatlılar", { state: { imgSrc, nameOfCafe, categoryName } });
     } else if (categoryName === "Ana Yemekler") {
       navigate("/ana-yemekler", { state: { imgSrc, nameOfCafe, categoryName } });
     } else if (categoryName === "Soğuk İçecekler") {

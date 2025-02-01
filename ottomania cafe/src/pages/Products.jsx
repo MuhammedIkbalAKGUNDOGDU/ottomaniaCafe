@@ -24,7 +24,6 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       console.log("Seçilen kategori:", categoryName);
-      console.log("Firestore koleksiyonu:", cafeName);
 
       try {
         const q = query(
@@ -41,6 +40,7 @@ const Products = () => {
         }));
 
         setProducts(productsArray);
+        console.log(productsArray);
       } catch (error) {
         console.error("Ürünleri getirirken hata oluştu:", error);
       }

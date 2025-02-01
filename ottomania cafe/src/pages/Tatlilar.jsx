@@ -14,7 +14,7 @@ const Tatlilar = () => {
   useEffect(() => {
     if (categoryName.trim()) {
       // Boşlukları temizleyerek kontrol ediyoruz
-      navigate(`/category/${encodeURIComponent(categoryName)}`, {
+      navigate(`/category/tatlılar`, {
         state: { imgSrc, nameOfCafe, categoryName },
         replace: true, // Tarayıcı geçmişine eklenmesini engeller
       });

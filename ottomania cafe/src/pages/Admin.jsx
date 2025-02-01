@@ -13,7 +13,7 @@ import {
 const Admin = () => {
   const [selectedCollection, setSelectedCollection] = useState("cafe");
   const [productName, setProductName] = useState("");
-  const [category, setCategory] = useState("kahve");
+  const [category, setCategory] = useState("tavuk yemekleri");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
   const [products, setProducts] = useState([]);
@@ -26,11 +26,12 @@ const Admin = () => {
       "makarnalar",
       "ızgaralar",
       "salatalar",
-      "alkolsüz kokteyller",
+      "Alkolsüz Kokteyller",
       "atıştırmalıklar",
       "tostlar",
       "ottoN serisi",
-      "natural otto klasik",
+      "otto klasik nargileler",
+      "natural nargileler",
       "dark serisi",
       "otto special",
       "otto ice tea",
@@ -157,7 +158,7 @@ const Admin = () => {
       <div className="flex gap-4">
         {/* Ürün Ekleme Formu */}
         <div className="p-4 bg-[#F4EFCC] w-1/2">
-          <h2>Ürün Ekle</h2>
+          <h2 className=" font-bold text-xl">Ürün Ekle</h2>
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col">
               <label className="font-bold">Koleksiyon Seç:</label>
@@ -194,7 +195,7 @@ const Admin = () => {
             <div className="flex flex-col">
               <label className="font-bold">Ürün Adı:</label>
               <input
-                className="border-2 rounded-lg"
+                className="border-2 rounded-lg p-2"
                 type="text"
                 value={productName}
                 onChange={(e) => setProductName(e.target.value)}
@@ -205,7 +206,7 @@ const Admin = () => {
             <div className="flex flex-col">
               <label className="font-bold">Fiyat:</label>
               <input
-                className="border-2 rounded-lg"
+                className="border-2 rounded-lg p-2"
                 type="number"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
@@ -216,7 +217,7 @@ const Admin = () => {
             <div className="flex flex-col">
               <label className="font-bold">Açıklama:</label>
               <textarea
-                className="border-2 rounded-lg"
+                className="border-2 rounded-lg p-2"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
@@ -234,8 +235,8 @@ const Admin = () => {
 
         {/* Ürün Silme */}
         <div className="p-4 bg-[#E8E8E8] w-1/2">
-          <h2>Ürünleri Sil</h2>
-          <div className="h-80 overflow-y-auto border p-2">
+          <h2 className="font-bold text-xl">Ürünleri Sil</h2>
+          <div className="h-105 overflow-y-auto border p-2">
             {products.map((product) => (
               <div
                 key={product.id}
@@ -256,7 +257,7 @@ const Admin = () => {
 
       {/* Ürün Güncelleme */}
       <div className="p-4 bg-[#D3D3D3]">
-        <h2>Ürünleri Güncelle</h2>
+        <h2 className="text-xl font-bold">Ürünleri Güncelle</h2>
         <div className="h-80 overflow-y-auto border p-2">
           {products.map((product) => (
             <div
