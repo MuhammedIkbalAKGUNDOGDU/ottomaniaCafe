@@ -24,6 +24,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       console.log("Seçilen kategori:", categoryName);
+      console.log("Seçilen Cafe:", cafeName);
 
       try {
         const q = query(

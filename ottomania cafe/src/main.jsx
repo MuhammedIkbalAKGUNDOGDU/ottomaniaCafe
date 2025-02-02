@@ -16,6 +16,7 @@ import Nargileler from "./pages/Nargileler";
 import SıcakIcecekler from "./pages/SıcakIcecekler";
 import SogukIcecekler from "./pages/SogukIcecekler";
 import Admin from "./pages/admin";
+import Subeler from "./pages/Subeler";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HelmetProvider>
     <BrowserRouter>
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/sicak-icecekler" element={<SıcakIcecekler />} />
         <Route path="/soguk-icecekler" element={<SogukIcecekler />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/subelerimiz" element={<Subeler />} />
       </Routes>
     </BrowserRouter>
   </HelmetProvider>
