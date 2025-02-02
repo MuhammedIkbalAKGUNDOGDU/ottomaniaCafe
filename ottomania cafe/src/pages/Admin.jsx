@@ -78,6 +78,50 @@ const Admin = () => {
     ],
   };
 
+  const addAdminUser = async () => {
+    try {
+      await addDoc(collection(db, "adminUsers"), {
+        username: "admin",
+        password: "1234", 
+      });
+      console.log("Admin kullanıcı eklendi.");
+    } catch (error) {
+      console.error("Admin kullanıcı eklenirken hata oluştu:", error);
+    }
+  };
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [adminUser, setAdminUser] = useState(null);
+
+  useEffect(() => {
+    const fetchAdminUser = async () => {
+      try {
+        const q = query(collection(db, "adminUsers"));
+        const querySnapshot = await getDocs(q);
+        if (!querySnapshot.empty) {
+          const userData = querySnapshot.docs[0].data();
+          setAdminUser(userData);
+        }
+      } catch (error) {
+        console.error("Admin kullanıcı verisi çekme hatası:", error);
+      }
+    };
+
+    fetchAdminUser();
+  }, []);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (username === adminUser.username && password === adminUser.password) {
+      setIsAuthenticated(true);
+    } else {
+      setError("Kullanıcı adı veya şifre hatalı");
+    }
+  };
+
   // Ürünleri Firestore'dan çekme fonksiyonu
   const fetchProducts = async () => {
     try {
@@ -154,6 +198,43 @@ const Admin = () => {
     fetchProducts();
   }, [selectedCollection]);
 
+  if (!isAuthenticated) {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen bg-gray-200">
+        <h2 className="text-2xl font-bold">Admin Girişi</h2>
+        <form
+          onSubmit={handleLogin}
+          className="bg-white p-6 rounded-lg shadow-lg w-80"
+        >
+          {error && <p className="text-red-500">{error}</p>}
+          <div className="flex flex-col mb-4">
+            <label className="font-bold">Kullanıcı Adı:</label>
+            <input
+              type="text"
+              className="border-2 rounded-lg p-2"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="flex flex-col mb-4">
+            <label className="font-bold">Şifre:</label>
+            <input
+              type="password"
+              className="border-2 rounded-lg p-2"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-blue-600 text-white rounded-lg p-2 font-bold cursor-pointer w-full"
+          >
+            Giriş Yap
+          </button>
+        </form>
+      </div>
+    );
+  }
   return (
     <div className="flex flex-col gap-4">
       <div className="flex gap-4">
