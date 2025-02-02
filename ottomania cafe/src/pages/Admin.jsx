@@ -78,18 +78,6 @@ const Admin = () => {
     ],
   };
 
-  const addAdminUser = async () => {
-    try {
-      await addDoc(collection(db, "adminUsers"), {
-        username: "admin",
-        password: "1234", 
-      });
-      console.log("Admin kullanıcı eklendi.");
-    } catch (error) {
-      console.error("Admin kullanıcı eklenirken hata oluştu:", error);
-    }
-  };
-
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
