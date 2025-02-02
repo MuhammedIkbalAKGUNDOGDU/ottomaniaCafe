@@ -5,16 +5,22 @@ import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import { Helmet } from "react-helmet-async";
 import Footer from "../components/Footer";
-
+import soguk from "../assets/sogukIcecekBg.jpeg";
+import sicak from "../assets/sıcakicecek.jpeg";
+import ana from "../assets/anayemek.jpeg";
+import baslangic from "../assets/baslangic.jpeg";
+import nargile from "../assets/nargile.jpeg";
+import kokteyl from "../assets/kokteyl.jpeg";
+import tatli from "../assets/tatli.jpeg";
 const Garden = () => {
   const categories = [
-    { name: "Ana Yemekler" },
-    { name: "Tatlılar" },
-    { name: "Soğuk İçecekler" },
-    { name: "Sıcak İçecekler" },
-    { name: "Başlangıçlar" },
-    { name: "Alkolsüz Kokteyller" },
-    { name: "Nargileler" },
+    { name: "Ana Yemekler", image: ana },
+    { name: "Tatlılar", image: tatli },
+    { name: "Soğuk İçecekler", image: soguk },
+    { name: "Sıcak İçecekler", image: sicak },
+    { name: "Başlangıçlar", image: baslangic },
+    { name: "Alkolsüz Kokteyller", image: kokteyl },
+    { name: "Nargileler", image: nargile },
   ];
 
   return (

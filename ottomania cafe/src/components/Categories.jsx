@@ -43,10 +43,13 @@ const Categories = ({ imgSrc, nameOfCafe, categories }) => {
           return (
             <div
               key={index}
-              className="h-40 bg-cover bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30"
+              className="h-40 bg-cover  relative bg-center rounded-lg flex items-center justify-center text-white text-xl font-bold mx-12 py-30"
               style={backgroundStyle}
             >
-              <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
+                  <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
+
+              <div className="uppercase  z-10 bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
+                
                 <div className="text-3xl "> {category.name}</div>
                 <div
                   onClick={() => handleNavigation(category.name)}
