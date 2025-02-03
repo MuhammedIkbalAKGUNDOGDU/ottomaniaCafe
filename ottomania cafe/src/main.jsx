@@ -15,7 +15,7 @@ import Products from "./pages/Products";
 import Nargileler from "./pages/Nargileler";
 import SıcakIcecekler from "./pages/SıcakIcecekler";
 import SogukIcecekler from "./pages/SogukIcecekler";
-import Admin from "./pages/admin";
+import Admin from "./pages/Admin";
 import Subeler from "./pages/Subeler";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HelmetProvider>
