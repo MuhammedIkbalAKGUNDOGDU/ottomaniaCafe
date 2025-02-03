@@ -12,7 +12,7 @@ const Footer = ({ cafeName, instagramlink, instagramad }) => {
             href={instagramlink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-pink-500"
+            className="flex items-center gap-2 hover:text-pink-500 text-xl"
           >
             <FaInstagram /> {instagramad || cafeName}
           </a>

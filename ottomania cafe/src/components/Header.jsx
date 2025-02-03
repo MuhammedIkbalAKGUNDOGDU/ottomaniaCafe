@@ -14,7 +14,7 @@ const Header = ({ imgSrc, nameOfCafe }) => {
 
   // Mail Gönderme İşlemi
   const handleMail = () => {
-    const email = "iletisim@ottomania.com"; // Mail adresini buraya yaz
+    const email = "naccar2458@gmail.com"; // Mail adresini buraya yaz
     const subject = encodeURIComponent("Şikayet/Öneri");
     const body = encodeURIComponent(
       "Merhaba,\n\nŞikayet/önerimi paylaşmak istiyorum:\n\n"

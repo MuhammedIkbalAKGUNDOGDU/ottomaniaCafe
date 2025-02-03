@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import bg1 from "../assets/nargile.jpeg";
-import bg2 from "../assets/tatli.jpeg";
+import bg2 from "../assets/gardenhome.jfif";
 
 const HomePage = () => {
   const navigate = useNavigate();
