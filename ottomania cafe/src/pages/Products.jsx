@@ -12,20 +12,21 @@ const Products = () => {
   const { categoryName } = useParams(); // URL'den parametre al
   const location = useLocation(); // State'ten gelen verileri alıyoruz
 
-  const { imgSrc, nameOfCafe } = location.state || {
+  const { imgSrc, nameOfCafe, instagramad, instagramlink } = location.state || {
     imgSrc: localStorage.getItem("imgSrc") || "",
     nameOfCafe: localStorage.getItem("nameOfCafe") || "Bilinmeyen Kafe",
+    instagramad: localStorage.getItem("instagramad") || "",
+    instagramlink: localStorage.getItem("instagramlink") || "",
   };
 
+  console.log("instagram ad", instagramad);
+  console.log("link", instagramlink);
   const [products, setProducts] = useState([]); // Firestore'dan çekilen ürünleri saklamak için state
   const cafeName = nameOfCafe.toLowerCase().includes("garden")
     ? "garden"
     : "cafe";
   useEffect(() => {
     const fetchProducts = async () => {
-      console.log("Seçilen kategori:", categoryName);
-      console.log("Seçilen Cafe:", cafeName);
-
       try {
         const q = query(
           collection(db, cafeName),
@@ -59,11 +60,15 @@ const Products = () => {
       </Helmet>
       <Header imgSrc={imgSrc} nameOfCafe={nameOfCafe} />
       <Banner imgSrc={imgSrc} nameOfCafe={nameOfCafe} />
-      <div className="text-white font-bold text-center mt-12 text-4xl font-bold capitalize">
+      <div className="text-white font-bold text-center mt-12 text-5xl my-8 font-bold uppercase">
         {categoryName}
       </div>
       <ProductsList list={products} nameOfCafe={nameOfCafe} />
-      <Footer />
+      <Footer
+        cafeName={nameOfCafe}
+        instagramad={instagramad}
+        instagramlink={instagramlink}
+      />
     </div>
   );
 };

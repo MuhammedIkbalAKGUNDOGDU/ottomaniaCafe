@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 import Footer from "../components/Footer";
 import soguk from "../assets/sogukIcecekBg.jpeg";
 import sicak from "../assets/sıcakicecek.jpeg";
-import ana from "../assets/anayemek.jpeg";
+import ana from "../assets/ızgaralar.jpeg";
 import baslangic from "../assets/baslangic.jpeg";
 import nargile from "../assets/nargile.jpeg";
 import kokteyl from "../assets/kokteyl.jpeg";
@@ -35,7 +35,11 @@ const Garden = () => {
         nameOfCafe={"Ottomania Garden"}
         categories={categories}
       />
-      <Footer />
+      <Footer
+        cafeName={"Ottomania Garden"}
+        instagramad={"ottomaniagarden_"}
+        instagramlink={"https://www.instagram.com/ottomaniagarden_/"}
+      />
     </div>
   );
 };

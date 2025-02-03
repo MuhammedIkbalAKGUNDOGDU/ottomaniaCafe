@@ -21,7 +21,7 @@ const Header = ({ imgSrc, nameOfCafe }) => {
         className="h-16 p-2 mx-2 w-auto cursor-pointer md:h-26 md:mx-8"
       />
       <div className="flex items-center justify-between mr-12 w-full">
-        <div className="text-sm md:text-xl font-bold text-white">
+        <div className="text-sm md:text-l font-bold text-white">
           {nameOfCafe}
         </div>
         <div

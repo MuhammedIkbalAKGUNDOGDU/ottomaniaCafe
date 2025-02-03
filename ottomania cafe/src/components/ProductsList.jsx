@@ -12,16 +12,11 @@ const ProductsList = ({ list, nameOfCafe }) => {
       {list.map((item, index) => (
         <div
           key={index}
-          className="bg-white text-white p-4 mt-4 rounded-lg shadow-md h-100 text-center mx-8"
+          className="bg-[#3A3E40] text-white p-4 mt-4 rounded-lg shadow-md h-100 text-center mx-8 flex items-center justify-center flex-col"
         >
-          <img
-            src={item.image || Logo}
-            alt=""
-            className="w-full h-60 object-scale-down rounded-md"
-          />
-          <h2 className="text-xl text-black font-bold">{item.name}</h2>
-          <p className="text-gray-400 mt-2">{item.description}</p>
-          <p className="text-gray-400 mt-2">{item.price}₺</p>
+          <h2 className="text-4xl text-white font-bold capitalize">{item.name}</h2>
+          <p className="text-white mt-2">{item.description}</p>
+          <p className="text-white text-3xl mt-2">{item.price}₺</p>
         </div>
       ))}
     </div>

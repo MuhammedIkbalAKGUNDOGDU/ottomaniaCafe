@@ -16,7 +16,7 @@ import tatli from "../assets/tatli.jpeg";
 const Cafe = () => {
   const categories = [
     { name: "Ana Yemekler", image: ana },
-    { name: "Tatlılar", image: tatli  },
+    { name: "Tatlılar", image: tatli },
     { name: "Soğuk İçecekler", image: soguk },
     { name: "Sıcak İçecekler", image: sicak },
     { name: "Başlangıçlar", image: baslangic },
@@ -35,8 +35,14 @@ const Cafe = () => {
         imgSrc={CafeLogo}
         nameOfCafe={"Ottomania Cafe"}
         categories={categories}
+        instagramad={"ottomania_"}
+        instagramlink={"https://www.instagram.com/ottomania_/"}
       />
-      <Footer />
+      <Footer
+        cafeName={"Ottomania Cafe"}
+        instagramad={"ottomania_"}
+        instagramlink={"https://www.instagram.com/ottomania_/"}
+      />
     </div>
   );
 };
