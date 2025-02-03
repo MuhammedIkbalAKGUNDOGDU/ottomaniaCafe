@@ -48,7 +48,7 @@ const Categories = ({
   return (
     <div>
       <div className="text-center">
-        <p className="font-bold text-white text-5xl uppercase my-20">
+        <p className="font-bold text-white text-3xl md:text-5xl uppercase my-20">
           {nameOfCafe}
         </p>
       </div>
@@ -69,10 +69,10 @@ const Categories = ({
               <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
 
               <div className="uppercase  z-10 bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
-                <div className="text-4xl "> {category.name}</div>
+                <div className="text-2xl md:text-4xl "> {category.name}</div>
                 <div
                   onClick={() => handleNavigation(category.name)}
-                  className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer"
+                  className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-sm md:text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer"
                 >
                   DETAYLI BİLGİ
                   <FaArrowCircleRight className="h-3 w-3" />
