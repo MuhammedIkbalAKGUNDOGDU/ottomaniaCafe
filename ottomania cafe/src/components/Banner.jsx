@@ -69,7 +69,7 @@ const Banner = ({ imgSrc, nameOfCafe }) => {
               <img
                 src={imgSrc}
                 alt="logo"
-                className="h-48 w-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+                className="h-24 md:h-48 w-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
               />
             </div>
           </SwiperSlide>
