@@ -49,11 +49,8 @@ const Admin = () => {
       "tatlılar",
     ],
     garden: [
-      "tavuk yemekleri",
-      "burgerlar",
-      "makarnalar",
       "ızgaralar",
-      "salatalar",
+      "tavalar",
       "Alkolsüz Kokteyller",
       "atıştırmalıklar",
       "tostlar",
