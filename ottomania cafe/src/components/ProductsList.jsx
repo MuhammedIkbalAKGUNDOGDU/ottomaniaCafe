@@ -16,7 +16,7 @@ const ProductsList = ({ list, nameOfCafe }) => {
         >
           <h2 className="text-4xl text-white font-bold capitalize">{item.name}</h2>
           <p className="text-white mt-2">{item.description}</p>
-          <p className="text-white text-3xl mt-2">{item.price}₺</p>
+          <p className="text-white text-3xl mt-2">{item.price} ₺</p>
         </div>
       ))}
     </div>
