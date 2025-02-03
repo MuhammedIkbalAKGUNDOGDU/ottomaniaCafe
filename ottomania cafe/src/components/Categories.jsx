@@ -72,7 +72,7 @@ const Categories = ({
                 <div className="text-2xl md:text-4xl "> {category.name}</div>
                 <div
                   onClick={() => handleNavigation(category.name)}
-                  className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-sm md:text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer"
+                  className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-sm md:text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer"
                 >
                   DETAYLI BİLGİ
                   <FaArrowCircleRight className="h-3 w-3" />
