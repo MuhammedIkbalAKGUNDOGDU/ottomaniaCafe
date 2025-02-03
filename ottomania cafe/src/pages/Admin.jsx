@@ -164,6 +164,31 @@ const Admin = () => {
       console.error("Ürün silme hatası:", error);
     }
   };
+  const addDateToFirestore = async (dateString) => {
+    try {
+      await addDoc(collection(db, "priceUpdateDates"), {
+        lastUpdated: dateString, // Kullanıcının girdiği tarih string olarak kaydedilir.
+      });
+
+      alert("Tarih başarıyla kaydedildi!");
+    } catch (error) {
+      console.error("Tarih ekleme hatası:", error);
+    }
+  };
+
+  const [dateString, setDateString] = useState("");
+
+  const handleDateSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!dateString) {
+      alert("Lütfen bir tarih girin!");
+      return;
+    }
+
+    await addDateToFirestore(dateString);
+    setDateString(""); // Giriş kutusunu sıfırla
+  };
 
   // Ürün güncelleme fonksiyonu
   const updateProduct = async (productId, newPrice, newDescription) => {
@@ -362,6 +387,24 @@ const Admin = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="p-4 bg-gray-200">
+        <h2 className="text-xl font-bold">Fiyat Güncellenme Tarihi Ekle</h2>
+        <form onSubmit={handleDateSubmit}>
+          <input
+            type="text"
+            className="border rounded p-2"
+            placeholder="Örn: 03-02-2025"
+            value={dateString}
+            onChange={(e) => setDateString(e.target.value)}
+          />
+          <button
+            type="submit"
+            className="bg-blue-600 text-white rounded-lg p-2 ml-2 cursor-pointer"
+          >
+            Kaydet
+          </button>
+        </form>
       </div>
     </div>
   );
