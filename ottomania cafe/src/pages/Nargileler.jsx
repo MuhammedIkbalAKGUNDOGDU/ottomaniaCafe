@@ -41,7 +41,7 @@ const Nargileler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> OttoN Serisi</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -63,7 +63,7 @@ const Nargileler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Natural Nargileler</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -85,7 +85,7 @@ const Nargileler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl ">Otto Klasik Nargileler</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -107,7 +107,7 @@ const Nargileler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Dark Serisi</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -129,7 +129,7 @@ const Nargileler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Otto Special</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -151,7 +151,7 @@ const Nargileler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Otto Ice Tea</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -173,7 +173,7 @@ const Nargileler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl ">Premium</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>

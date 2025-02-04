@@ -42,7 +42,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Soğuk kahveler</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -64,7 +64,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Soğuk İçecekler</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -86,7 +86,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Frappuccino</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -108,7 +108,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Limonatalar</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -130,7 +130,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Smoothie Çeşitleri</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -152,7 +152,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Milkshake Çeşitleri</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -174,7 +174,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> Frozen Çeşitleri</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
@@ -196,7 +196,7 @@ const SogukIcecekler = () => {
         >
           <div className="uppercase bg-opacity-50 px-4 py-2 rounded-md text-center flex-row justify-items-center items-center">
             <div className="text-3xl "> bubbletea Çeşitleri</div>
-            <div className="flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
+            <div className="detayli-bilgi flex w-fit items-center gap-2 mt-4 px-6 py-2 bg-white text-black text-base rounded-md font-medium shadow-md hover:bg-gray-300 transition-all cursor-pointer">
               DETAYLI BİLGİ
               <FaArrowCircleRight className="h-3 w-3" />
             </div>
