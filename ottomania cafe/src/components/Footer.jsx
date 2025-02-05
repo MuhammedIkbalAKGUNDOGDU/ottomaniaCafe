@@ -22,11 +22,11 @@ const Footer = ({ cafeName, instagramlink, instagramad }) => {
         <p>
           Bu site{" "}
           <a
-            href="https://github.com/seninprofilin"
+            href="https://softiumtechnologies.com/"
             target="_blank"
             className="text-blue-400 hover:underline"
           >
-            Code Technologies
+            Softium
           </a>{" "}
           tarafından yapılmıştır.
         </p>
