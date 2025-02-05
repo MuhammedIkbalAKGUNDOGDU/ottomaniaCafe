@@ -16,7 +16,6 @@ const AnaYemekler = () => {
       instagramad: localStorage.getItem("instagramad") || " ",
       instagramlink: localStorage.getItem("instagramlink") || " ",
     };
-  console.log(categoryName);
   return (
     <div className="bg-[#111] min-h-screen">
       <Header imgSrc={imgSrc} nameOfCafe={nameOfCafe} />

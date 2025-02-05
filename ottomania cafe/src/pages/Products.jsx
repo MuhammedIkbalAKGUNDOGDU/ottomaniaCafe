@@ -19,9 +19,6 @@ const Products = () => {
     instagramlink: localStorage.getItem("instagramlink") || "",
   };
 
-  console.log("instagram ad", instagramad);
-  console.log("link", instagramlink);
-
   const [products, setProducts] = useState([]); // Firestore'dan çekilen ürünleri saklamak için state
   const [loading, setLoading] = useState(true); // Yüklenme durumu için state
 

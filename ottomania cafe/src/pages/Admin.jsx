@@ -132,7 +132,6 @@ const Admin = () => {
     }
 
     try {
-      console.log(category);
       await addDoc(collection(db, selectedCollection), {
         name: productName,
         category: category,
