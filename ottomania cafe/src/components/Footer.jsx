@@ -26,7 +26,7 @@ const Footer = ({ cafeName, instagramlink, instagramad }) => {
             target="_blank"
             className="text-blue-400 hover:underline"
           >
-            Senin Adın
+            Ilka Tech
           </a>{" "}
           tarafından yapılmıştır.
         </p>
