@@ -63,7 +63,7 @@ const Products = () => {
       <Header imgSrc={imgSrc} nameOfCafe={nameOfCafe} />
       <Banner imgSrc={imgSrc} nameOfCafe={nameOfCafe} />
       <div className="text-white font-bold text-center mt-12 text-5xl my-8 uppercase">
-        {categoryName}
+        {categoryName === "burgerlar" ? "Burgerler" : categoryName}
       </div>
 
       {loading ? (
