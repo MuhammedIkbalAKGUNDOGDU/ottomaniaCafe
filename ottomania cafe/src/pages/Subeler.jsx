@@ -50,7 +50,7 @@ const Subeler = () => {
         imageSrc={Foto}
         locationUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5051.404507007425!2d28.894189206540265!3d41.165447739250645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab3602af666c5%3A0xefc62d95d3a45f44!2sOttomania%20Garden%20G%C3%B6kt%C3%BCrk!5e0!3m2!1str!2str!4v1738524880227!5m2!1str!2str"
       />
-      <Footer />
+      <Footer cafeName={nameOfCafe} />
     </div>
   );
 };
